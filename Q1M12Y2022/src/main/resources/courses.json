@@ -1,0 +1,32 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Курс: \"Денежный маяк 2023\" ",
+      "price": "1200",
+      "description": "Описание: Если возникают вопросы по курсу обращайтесь к Светлане Тишковой:\n\n",
+      "photo_url": "https://newpoznay.com/wp-content/uploads/2022/11/denezhnyj-mayak-2023-210x210-1.png"
+    },
+    {
+      "id": 2,
+      "title": "Курс: \"ПИСАТЕЛИ НОВОГО ВРЕМЕНИ 5.0\" ",
+      "price": "5000",
+      "description": "Описание: Если возникают вопросы по курсу обращайтесь к Светлане Тишковой:\n\n",
+      "photo_url": "https://newpoznay.com/wp-content/uploads/2022/09/pisatel-5-210x210-1.png"
+    },
+    {
+      "id": 3,
+      "title": "Курс: \"ИСЦЕЛЯЮЩИЕ ПУТЕШЕСТВИЯ. ОНЛАЙН-СПА\" ",
+      "price": "12000",
+      "description": "Описание: Если возникают вопросы по курсу обращайтесь к Светлане Тишковой:\n\n",
+      "photo_url": "https://newpoznay.com/wp-content/uploads/2022/05/iscelyayushhie-puteshestviya-onlajn-spa-210x210-1.png"
+    },
+    {
+      "id": 4,
+      "title": "Курс: \"Духовный маяк-2022: ИСЦЕЛЯЮЩИЕ ФОРМУЛЫ СИЛЫ\" ",
+      "price": "24000",
+      "description": "Описание: Если возникают вопросы по курсу обращайтесь к Светлане Тишковой:\n\n",
+      "photo_url": "https://poznay.by/wp-content/uploads/2022/02/duxovnyj-mayak-2022-210x210-1.png"
+    }
+  ]
+}
