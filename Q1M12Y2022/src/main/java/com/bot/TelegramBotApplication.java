@@ -41,35 +41,32 @@ public class TelegramBotApplication extends TelegramBot {
 
     private void serveCommand(String commandName, long chatId) {
         switch (commandName) {
-            case "/start": {
+            case "/start" -> {
                 SendMessage resp = new SendMessage(chatId, "Добро пожаловать")
                         .replyMarkup(new ReplyKeyboardMarkup(new String[][]{
                                 {"Курсы", "Отзывы"},
                                 {"Поддержка"}
                         }).resizeKeyboard(true));
                 this.execute(resp);
-                break;
             }
-            case "/help": {
-                SendMessage resp = new SendMessage(chatId, "Вы активировали команду /help");
+            case "Поддержка" -> {
+                SendMessage resp = new SendMessage(chatId, "Пишите прямо нам ! По ссылке откроется чат поддержки: \n https://jivo.chat/8R3rO3JI24");
                 this.execute(resp);
-                break;
             }
-            case "/menu": {
-
+            case "Отзывы" -> {
+                SendMessage resp = new SendMessage(chatId, "Пока что отзывы находятся у нас на сайте : \n https://newpoznay.com/category/otzyvy/");
+                this.execute(resp);
             }
-            case "Курсы": {
+            case "Курсы" -> {
                 CourseServiceImpl courseService = new CourseServiceImpl();
                 courseService.getAllCourses().stream()
                         .map(phone -> new SendPhoto(chatId, phone.getPhoto_url())
                                 .caption(String.format("%s - %s", phone.getTitle(), phone.getDescription())))
                         .forEach(this::execute);
-                break;
             }
-            default: {
+            default -> {
                 SendMessage resp = new SendMessage(chatId, "Команда не найдена");
                 this.execute(resp);
-                break;
             }
         }
     }
